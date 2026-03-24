@@ -279,7 +279,7 @@ export function DashboardPage() {
               <YAxis axisLine={false} tickLine={false} tick={{ fontSize: 10, fill: '#94A3B8' }} tickFormatter={(v: number) => `₹${v}`} />
               <Tooltip
                 contentStyle={{ backgroundColor: '#fff', border: '1px solid #E2E8F0', borderRadius: '6px', fontSize: '11px' }}
-                formatter={(v: number | string) => [`₹${v}`, t('user_dashboard.stat_spent')]}
+                formatter={(v: number | string | undefined) => [`₹${v}`, t('user_dashboard.stat_spent')]}
               />
               <Line type="monotone" dataKey="amount" stroke="#16a34a" strokeWidth={2} dot={false} />
             </LineChart>

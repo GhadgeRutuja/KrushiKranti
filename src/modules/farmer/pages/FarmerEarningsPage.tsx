@@ -210,7 +210,7 @@ export function FarmerEarningsPage() {
                                         fontSize: '11px',
                                         boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
                                     }}
-                                    formatter={(v: number | string) => [`₹${Number(v).toLocaleString('en-IN')}`, 'Revenue']}
+                                    formatter={(v: number | string | undefined) => [`₹${Number(v).toLocaleString('en-IN')}`, 'Revenue']}
                                 />
                                 <Area
                                     type="monotone"
@@ -252,7 +252,7 @@ export function FarmerEarningsPage() {
                                         fontSize: '11px',
                                         boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
                                     }}
-                                    formatter={(v: number | string) => [`₹${Number(v).toLocaleString('en-IN')}`, 'Sales']}
+                                    formatter={(v: number | string | undefined) => [`₹${Number(v).toLocaleString('en-IN')}`, 'Sales']}
                                 />
                                 <Bar dataKey="sale" fill="#eab308" radius={[4, 4, 0, 0]} />
                             </BarChart>

@@ -123,7 +123,7 @@ export function WholesalerDashboardPage() {
               <YAxis axisLine={false} tickLine={false} tick={{ fontSize: 10, fill: '#94A3B8' }} tickFormatter={(v: number) => `₹${v / 1000}k`} />
               <Tooltip
                 contentStyle={{ backgroundColor: '#fff', border: '1px solid #E2E8F0', borderRadius: '6px', fontSize: '11px' }}
-                formatter={(v: number | string) => [`₹${v}`, 'Purchased']}
+                formatter={(v: number | string | undefined) => [`₹${v}`, 'Purchased']}
               />
               <Bar dataKey="amount" fill="#eab308" radius={[3, 3, 0, 0]} />
             </BarChart>

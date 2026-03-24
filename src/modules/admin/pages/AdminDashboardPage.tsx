@@ -200,7 +200,7 @@ export function AdminDashboardPage() {
                 <CartesianGrid strokeDasharray="0" vertical={false} stroke="#F1F5F9" />
                 <XAxis dataKey="month" axisLine={false} tickLine={false} tick={{ fontSize: 10, fill: '#94A3B8' }} />
                 <YAxis axisLine={false} tickLine={false} tick={{ fontSize: 10, fill: '#94A3B8' }} tickFormatter={(v: number) => `₹${v / 1000}k`} />
-                <Tooltip contentStyle={{ backgroundColor: '#fff', border: '1px solid #E2E8F0', borderRadius: '6px', fontSize: '11px' }} formatter={(v: number | string) => [`₹${v}`, t('admin.stat_revenue')]} />
+                <Tooltip contentStyle={{ backgroundColor: '#fff', border: '1px solid #E2E8F0', borderRadius: '6px', fontSize: '11px' }} formatter={(v: number | string | undefined) => [`₹${v}`, t('admin.stat_revenue')]} />
                 <Line type="monotone" dataKey="revenue" stroke="#16a34a" strokeWidth={2} dot={false} />
               </LineChart>
             </ResponsiveContainer>
