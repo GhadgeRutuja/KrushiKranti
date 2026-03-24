@@ -1,0 +1,13 @@
+export { AdminDashboardPage } from './pages/AdminDashboardPage';
+export { ManageUsersPage } from './pages/ManageUsersPage';
+export { ManageProductsPage } from './pages/ManageProductsPage';
+export { ManageDeliveryBoysPage } from './pages/ManageDeliveryBoysPage';
+export { OrderAssignmentPage } from './pages/OrderAssignmentPage';
+export { FraudDetectionPage } from './pages/FraudDetectionPage';
+export { CommissionPage } from './pages/CommissionPage';
+export { AdminLogsPage } from './pages/AdminLogsPage';
+export { AdminOrdersPage } from './pages/AdminOrdersPage';
+export { default as GlobalChatMonitorPage } from './pages/GlobalChatMonitorPage';
+export { AdminBlogsPage } from './pages/AdminBlogsPage';
+export { AdminPaymentsPage } from './pages/AdminPaymentsPage';
+export { AdminShipmentsPage } from './pages/AdminShipmentsPage';
